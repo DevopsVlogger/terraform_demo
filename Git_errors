@@ -24,3 +24,14 @@ Execute following command to fix the issue ->
 $ git filter-branch -f --index-filter 'git rm -r --cached --ignore-unmatch file_or_dir_name'
 
 At which point you can push the file to GitHub.
+
+
+---------------
+You could git fetch origin to update the remote branch in your repository to point to the latest version. For a diff against the remote:
+
+git diff origin/master
+Yes, you can use caret notation as well.
+
+If you want to accept the remote changes:
+
+git merge origin/master
