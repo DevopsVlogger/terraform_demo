@@ -1,3 +1,15 @@
+Command history -
+ git config --global user.name "TroubleshooteRJ"
+ git config --global user.email "xxxxx@gmail.com"
+ git config --global  --list
+ git add .
+ git commit -m "terraform-ec2-project commit 1"
+ git remote add origin https://github.com/TroubleshooteRJ/terraform_demo.git
+ git remote -v
+ git pull origin master
+ git rebase origin/master
+ git filter-branch -f --index-filter 'git rm -r --cached --ignore-unmatch .terraform/'
+ git push origin master --force
 
 Fixing Git error “GH001: Large files detected"
 
